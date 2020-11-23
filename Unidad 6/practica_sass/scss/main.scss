@@ -1,0 +1,47 @@
+// Core
+//@import 'core/functions';
+@import 'core/mixins';
+@import 'core/variables';
+
+// Layout
+//@import 'layout/header';
+//@import 'layout/footer';
+//@import 'layout/grid';
+
+// Components
+//@import 'components/buttons';
+//@import 'components/forms';
+//@import 'components/hero';
+//@import 'components/newsletter';
+//@import 'components/typography';
+
+// Pages
+//@import 'pages/about-us';
+//@import 'pages/contact';
+@import 'pages/home';
+
+//Estilos específicos de esta página 
+/*Cabecera*/
+
+header p{
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+
+/*Menú*/
+
+nav ul li:last-child{
+    border-left: 3px dotted white;
+}
+
+/*Espacio de ventas*/
+
+.venta-casa-div{
+    padding-bottom: 12.5%;
+}
+
+.venta-casa-div img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}

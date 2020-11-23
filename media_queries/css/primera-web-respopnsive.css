@@ -1,0 +1,394 @@
+/*Definimos las clases con las que vamos a trabar*/
+:root{
+    --column-dispositivos-pequeños: calc((80 / 960) * 100%);
+    --column-dispositivos-grandes: calc((80 / 960) * 100%);
+}
+
+body{
+    font-size: 110%;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    clear: both;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    /*background: rgba(64, 72, 141, 0.822);*/
+    background: rgb(160, 127, 21);
+}
+
+.col-1{
+    float: left;
+    width: var(--column-dispositivos-pequeños);
+    background-color: pink;
+}
+
+.col-2{
+    float: left;
+    width: calc(2 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-3{
+    float: left;
+    width: calc(3 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-4{
+    float: left;
+    width: calc(4 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-5{
+    float: left;
+    width: calc(5 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-6{
+    float: left;
+    width: calc(6 * var(--column-dispositivos-pequeños));
+}
+
+.col-7{
+    float: left;
+    width: calc(7 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-8{
+    float: left;
+    width: calc(8 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-9{
+    float: left;
+    width: calc(9 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-10{
+    float: left;
+    width: calc(10 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-11{
+    float: left;
+    width: calc(11 * var(--column-dispositivos-pequeños));
+    background-color: pink;
+}
+
+.col-12{
+    float: left;
+    width: calc(12 * var(--column-dispositivos-pequeños));
+}
+
+.none{
+    display: none;
+}
+
+.ver{
+    display: block;
+}
+
+@media screen and (min-width: 767px){
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .col-sm-1{
+        float: left;
+        width: var(--column-dispositivos-pequeños);
+    }
+    
+    .col-sm-2{
+        float: left;
+        width: calc(2 * var(--column-dispositivos-pequeños));
+    }
+    
+    .col-sm-3{
+        float: left;
+        width: calc(3 * var(--column-dispositivos-pequeños));
+    }
+    
+    .col-sm-4{
+        float: left;
+        width: calc(4 * var(--column-dispositivos-pequeños));
+    }
+    
+    .col-sm-5{
+        float: left;
+        width: calc(5 * var(--column-dispositivos-pequeños));
+    }
+    
+    .col-sm-6{
+        float: left;
+        width: calc(6 * var(--column-dispositivos-pequeños));
+    }
+    
+    .col-sm-7{
+        float: left;
+        width: calc(7 * var(--column-dispositivos-pequeños));
+        background-color: green;
+    }
+    
+    .col-sm-8{
+        float: left;
+        width: calc(8 * var(--column-dispositivos-pequeños));
+        background-color: green;
+    }
+    
+    .col-sm-9{
+        float: left;
+        width: calc(9 * var(--column-dispositivos-pequeños));
+        background-color: green;
+    }
+    
+    .col-sm-10{
+        float: left;
+        width: calc(10 * var(--column-dispositivos-pequeños));
+        background-color: green;
+    }
+    
+    .col-sm-11{
+        float: left;
+        width: calc(11 * var(--column-dispositivos-pequeños));
+        background-color: green;
+    }
+    
+    .col-sm-12{
+        float: left;
+        width: calc(12 * var(--column-dispositivos-pequeños));
+    }
+    
+    .none-sm{
+        display: none;
+    }
+    
+    .ver-sm{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 971px){
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .col-md-1{
+        float: left;
+        width: var(--column-dispositivos-grandes);
+    }
+    
+    .col-md-2{
+        float: left;
+        width: calc(2 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-3{
+        float: left;
+        width: calc(3 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-4{
+        float: left;
+        width: calc(4 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-5{
+        float: left;
+        width: calc(5 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-6{
+        float: left;
+        width: calc(6 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-7{
+        float: left;
+        width: calc(7 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-8{
+        float: left;
+        width: calc(8 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-9{
+        float: left;
+        width: calc(9 * var(--column-dispositivos-grandes));
+        background: blue;
+    }
+    
+    .col-md-10{
+        float: left;
+        width: calc(10 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-11{
+        float: left;
+        width: calc(11 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-md-12{
+        float: left;
+        width: calc(12 * var(--column-dispositivos-grandes));
+    }
+    
+    .none-md{
+        display: none;
+    }
+    
+    .ver-md{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .col-l-1{
+        float: left;
+        width: var(--column-dispositivos-grandes);
+    }
+    
+    .col-l-2{
+        float: left;
+        width: calc(2 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-3{
+        float: left;
+        width: calc(3 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-4{
+        float: left;
+        width: calc(4 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-5{
+        float: left;
+        width: calc(5 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-6{
+        float: left;
+        width: calc(5.5 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-7{
+        float: left;
+        width: calc(7 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-8{
+        float: left;
+        width: calc(8 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-9{
+        float: left;
+        width: calc(9 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-10{
+        float: left;
+        width: calc(10 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-11{
+        float: left;
+        width: calc(11 * var(--column-dispositivos-grandes));
+    }
+    
+    .col-l-12{
+        float: left;
+        width: calc(12 * var(--column-dispositivos-grandes));
+    }
+    
+    .none-l{
+        display: none;
+    }
+    
+    .ver-l{
+        display: block;
+    }
+}
+
+/*Estilos generales*/
+
+img{
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+}
+
+/*Cabecera*/
+
+header p{
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+
+/*Menú*/
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+nav ul li:last-child{
+    border-left: 3px dotted white;
+}
+
+/*Espacio de ventas*/
+
+.venta-casa-div{
+    padding-bottom: 12.5%;
+}
+
+.venta-casa-div img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}

@@ -1,0 +1,132 @@
+//../Core
+@import 'variables.scss';
+
+@mixin generarFrameworkResponsive(){
+    *{
+        box-sizing: border-box;
+    }
+
+    .row{
+        clear: both;
+    }
+
+
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        background: rgb(160, 127, 21);
+
+        @media screen and (min-width: 971px){
+            width: 90%;
+        }
+    }
+
+    @for $i from 1 through 12{
+        .col-#{$i}{
+            float: left;
+            width: $i * $col-1;
+        }
+
+        .none{
+            display: none;
+        }
+
+        .ver{
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 767px){
+        @for $i from 1 through 12{
+            .col-sm-#{$i}{
+                float: left;
+                width: $i * $col-1;
+            }
+        }
+
+        .none-sm{
+            display: none;
+        }
+
+        .ver-sm{
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 971px){
+        @for $i from 1 through 12{
+            .col-md-#{$i}{
+                float: left;
+                width: $i * $col-1;
+            }
+    
+            .none-md{
+                display: none;
+            }
+    
+            .ver-md{
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1280px){ 
+        @for $i from 1 through 12{
+            .col-l-#{$i}{
+                float: left;
+                width: $i * $col-1;
+            }
+    
+            .none-l{
+                display: none;
+            }
+    
+            .ver-l{
+                display: block;
+            }
+        }
+    }
+
+
+}
+
+//Menú horizontal horizontal, estilo normal
+@mixin crearMenuHorizontalNormal(){
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $color-menu-background;
+    }
+
+    nav a {
+        display: block;
+        color: $color-menu-letra;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .menu{
+        position: sticky;
+        top: 0;
+    }
+
+    nav a:hover {
+        background-color: $color-menu-background-hover;
+        color: $color-menu-letra-hover;
+    }
+}
+
+@mixin generarEstiloGeneralParaImagen(){
+    img{
+        width: $anchoImagen;
+    }
+}
+
+@mixin generarEstiloGeneralParaIframe(){
+    iframe{
+        width: $anchoIframe;
+    }
+}
